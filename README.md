@@ -1,7 +1,8 @@
 # Repro
 
 This project is intended to reproduce a problem with table sorting in
-Angular Material using custom `sortingDataAccessor` functions.
+Angular Material using custom `sortingDataAccessor` functions. This bug was
+reported as https://github.com/angular/material2/issues/15888.
 
 The example table has a "Score Display" column which displays numbers using
 fraction characters, e.g. "2½" instead of "2.5"; however, it is intended to
