@@ -1,4 +1,4 @@
-# Repro
+# Angular Material table sorting bug repro
 
 This project is intended to reproduce a problem with table sorting in
 Angular Material using custom `sortingDataAccessor` functions. This bug was
