@@ -1,5 +1,16 @@
 # Repro
 
+This project is intended to reproduce a problem with table sorting in
+Angular Material using custom `sortingDataAccessor` functions.
+
+The example table has a "Score Display" column which displays numbers using
+fraction characters, e.g. "2½" instead of "2.5"; however, it is intended to
+be sorted according to the numerical order.
+
+The bug is that if `sortingDataAccessor` on `MatTableDataSource` is assigned
+after the `sort` member, the sorting does not work as expected, whereas if
+the order of those two assignments is reversed, it does work as expected.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
 
 ## Development server
